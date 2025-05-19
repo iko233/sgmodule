@@ -29,5 +29,4 @@ http-request ^https?://.* header-del x-browser-validation
 http-request ^https?://.* header-del x-browser-year
 http-request ^https?://.* header-del x-client-data
 http-request ^https?://.* header-del sec-ch-prefers-color-scheme
-http-request ^https?://.* header-add sec-ch-prefers-color-scheme dark
 http-request ^https://.*\.baidu\.com/ header-add referer https://www.baidu.com/

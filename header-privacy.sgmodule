@@ -1,5 +1,7 @@
 #!name=header隐私处理
 #!desc=header隐私处理
+[MITM]
+hostname = %INSERT% /^(?!https?:\/\/(?:(?:[A-Za-z0-9-]+\.)+icloud\.com\.cn)(?:\/|$))https?:\/\/[^\/\s]+(?:\/.*)?$/
 
 [Header Rewrite]
 http-request ^https?://.* header-del accept-language

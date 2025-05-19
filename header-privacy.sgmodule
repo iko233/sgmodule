@@ -1,9 +1,6 @@
 #!name=header隐私处理
 #!desc=header隐私处理
 
-[MITM]
-hostname = %INSERT% *
-
 [Header Rewrite]
 http-request ^https?://.* header-del accept-language
 http-request ^https?://.* header-del referer

@@ -1,3 +1,6 @@
+#!name=网页默认夜间模式
+#!desc=网页默认夜间模式
+
 [Header Rewrite]
 http-request ^https?://.* header-del sec-ch-prefers-color-scheme
 http-request ^https?://.* header-add sec-ch-prefers-color-scheme dark

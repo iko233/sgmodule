@@ -1,0 +1,33 @@
+#!name=header隐私处理
+#!desc=header隐私处理
+
+[MITM]
+hostname = %INSERT% *
+
+[Header Rewrite]
+http-request ^https?://.* header-del accept-language
+http-request ^https?://.* header-del referer
+http-request ^https?://.* header-del dnt
+http-request ^https?://.* header-add dnt 1
+http-request ^https?://.* header-del sec-ch-ua
+http-request ^https?://.* header-del sec-ch-ua-arch
+http-request ^https?://.* header-del sec-ch-ua-bitness
+http-request ^https?://.* header-del sec-ch-ua-form-factors
+http-request ^https?://.* header-del sec-ch-ua-full-version
+http-request ^https?://.* header-del sec-ch-ua-full-version-list
+http-request ^https?://.* header-del sec-ch-ua-mobile
+http-request ^https?://.* header-del sec-ch-ua-model
+http-request ^https?://.* header-del sec-ch-ua-platform
+http-request ^https?://.* header-del sec-ch-ua-platform-version
+http-request ^https?://.* header-del sec-ch-ua-wow64
+http-request ^https?://.* header-del sec-fetch-dest
+http-request ^https?://.* header-del sec-fetch-mode
+http-request ^https?://.* header-del sec-fetch-site
+http-request ^https?://.* header-del x-browser-channel
+http-request ^https?://.* header-del x-browser-copyright
+http-request ^https?://.* header-del x-browser-validation
+http-request ^https?://.* header-del x-browser-year
+http-request ^https?://.* header-del x-client-data
+http-request ^https?://.* header-del sec-ch-prefers-color-scheme
+http-request ^https?://.* header-add sec-ch-prefers-color-scheme dark
+http-request ^https://.*\.baidu\.com/ header-add referer https://www.baidu.com/

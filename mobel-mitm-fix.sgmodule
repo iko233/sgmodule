@@ -1,0 +1,5 @@
+#!name=手机部分mitm排除
+#!desc=手机部分mitm排除
+
+[MITM]
+hostname = %INSERT% *-*x.com,

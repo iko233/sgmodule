@@ -1,7 +1,7 @@
 #!name=header隐私处理
 #!desc=header隐私处理
 [MITM]
-hostname = %INSERT% -*icloud*, -<ip-address>, *:443
+hostname = %INSERT% *:443
 
 [Header Rewrite]
 http-request ^https?://.* header-del accept-language

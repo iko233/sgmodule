@@ -1,7 +1,7 @@
 #!name=header隐私处理
 #!desc=header隐私处理
 [MITM]
-hostname = %INSERT% *:443
+hostname = %INSERT% *
 
 [Header Rewrite]
 http-request ^https?://.* header-del accept-language

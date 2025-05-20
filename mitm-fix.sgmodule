@@ -1,4 +1,4 @@
 #!name=mitm-fix
 #!desc=mitm-fix
 [MITM]
-hostname = -*icloud*, -*apple.com, -<ip-address>
+hostname =  %INSERT% -*icloud*, -*apple.com, -<ip-address>

@@ -2,4 +2,4 @@
 #!desc=手机部分mitm排除
 
 [MITM]
-hostname = %INSERT% *-*x.com,
+hostname = %INSERT% -*x.com, -*twitter.com
